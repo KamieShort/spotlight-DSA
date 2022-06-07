@@ -5,5 +5,11 @@ describe("Stack Class", () => {
     stack.push(1);
     expect(stack.peek()).toEqual(1);
   });
-  // add more tests here...
+  it("pop should remove and return last item on the stack ", () => {
+    const stack = new Stack();
+    stack.push("fox");
+    stack.push("goose");
+    stack.push("lizard");
+    expect(stack.pop()).toEqual("lizard");
+  });
 });
