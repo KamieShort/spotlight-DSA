@@ -34,11 +34,11 @@ class Queue {
 }
 
 function reverse(array) {
-  const reversedArray = [];
-  for (let i = array.length - 1; i >= 0; i--) {
-    reversedArray.push(array[i]);
+  const stack = new Stack(array);
+  let reversedArray = [];
+  for (let i = 0; i < array.length; i++) {
+    reversedArray = [...reversedArray, stack.pop()];
   }
-  return reversedArray;
 }
 
 module.exports = { Stack, Queue, reverse };
