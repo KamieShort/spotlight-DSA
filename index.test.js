@@ -25,3 +25,9 @@ describe("Queue Class", () => {
     expect(queue.dequeue()).toEqual("hedwig");
   });
 });
+
+describe("Reverse Class", () => {
+  it("should reverse an array", () => {
+    expect(reverse([12, 3, 5, 7])).toEqual([7, 5, 3, 12]);
+  });
+});

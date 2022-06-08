@@ -33,14 +33,12 @@ class Queue {
   }
 }
 
-/* 
+function reverse(array) {
+  const reversedArray = [];
+  for (let i = array.length - 1; i >= 0; i--) {
+    reversedArray.push(array[i]);
+  }
+  return reversedArray;
+}
 
-[]
-
-enqueue('cookie')  [cookie]
-enqueue('donut')  [donut, cookie]
-dequeue()   [donut] cookie
-
-*/
-
-module.exports = { Stack, Queue };
+module.exports = { Stack, Queue, reverse };
